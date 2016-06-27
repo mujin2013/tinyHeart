@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+		<title>爱心鱼游戏</title>
+		<link rel="stylesheet" href="./css/tinyHeart.css" type="text/css"/>
+	</head>
+	<body>
+		<div class="all_canvas_box">
+			<canvas id="canvas1" width="800" height="600"></canvas>
+			<canvas id="canvas2" width="800" height="600"></canvas>
+			<div id="gameRules" class="hideRules">
+				<h1>游戏规则</h1>
+				<p class="rule">大鱼需要用吃的果实来喂小鱼，小鱼会随着时间的流失开始饥饿，身体也会慢慢变白，当小鱼的身体完全变白则饿死，游戏结束。</p>
+				<p class="rule"><img src="./images/fruit.png"/><span>橙色果实为普通果实，分数为10分！</span></p>
+				<p class="rule"><img src="./images/blue.png"/><span>蓝色果实为特殊果实，分数为20分！</span></p>
+				<p class="startGame" id="startGame">开始游戏</p>
+			</div>
+			<div  id="stillPlay" class="hideStillPlay">
+				<h1>我的成绩</h1>
+				<p><span class="score_txt">本次得分：</span><span class="score" id="curScore">90</span></p>
+				<p><span class="score_txt">历史最高分：</span><span class="score" id="historyScore">100</span></p>
+				<p><span id="rePlay">再玩一次</span><span id="bye">不玩了</span></p>
+			</div>
+		</div>
+
+		<script src="./js/tinyHeart.js"></script>
+	</body>
+</html>

@@ -1,0 +1,101 @@
+*{
+	margin:0;
+	padding:0;
+}
+.all_canvas_box{
+	position:relative;
+	width:800px;
+	height:600px;
+	margin:10px auto 0 auto;
+}
+#canvas1{
+	position:absolute;
+	top:0;
+	z-index:1;
+}
+#canvas2{
+	position:absolute;
+	top:0;
+	z-index:0;
+}
+#gameRules,#stillPlay{
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:400px;
+	height:250px;
+	margin-top:-125px;
+	margin-left:-200px;
+	z-index:5;
+	border-radius:10px;
+	box-shadow:0 -2px 4px #99CC33,2px 0 4px #99CC33,0 2px 4px #99CC33,-2px 0 4px #99CC33;
+	-webkit-box-shadow:0 -2px 4px #99CC33,2px 0 4px #99CC33,0 2px 4px #99CC33,-2px 0 4px #99CC33;
+	-o-box-shadow:0 -2px 4px #99CC33,2px 0 4px #99CC33,0 2px 4px #99CC33,-2px 0 4px #99CC33;
+	-moz-box-shadow:0 -2px 4px #99CC33,2px 0 4px #99CC33,0 2px 4px #99CC33,-2px 0 4px #99CC33;
+	-ms-box-shadow:0 -2px 4px #99CC33,2px 0 4px #99CC33,0 2px 4px #99CC33,-2px 0 4px #99CC33;
+	padding:5px;
+	background:-webkit-linear-gradient(bottom,#99CC33,#CCFF99);/*必须要写-webkit-前缀*/
+	background:-moz-linear-gradient(bottom,#99CC33,#CCFF99);
+	background:-o-linear-gradient(bottom,#99CC33,#CCFF99);
+	background:-ms-linear-gradient(bottom,#99CC33,#CCFF99);
+}
+.showRules{
+	display:block !important;
+}
+.hideRules{
+	display:none !important;
+}
+#gameRules>h1,#stillPlay>h1{
+	font:26px/50px 'Microsoft YaHei';
+	color:#000;
+	font-style:bold;
+	text-align:center;
+}
+.rule,#stillPlay>p{
+	font-size:16px;
+	line-height:24px;
+	text-indent:32px;
+}
+.rule>span{
+	vertical-align:top;
+	margin-left:8px;
+}
+.startGame,#rePlay,#bye{
+	margin-top:20px;
+	font:20px/40px 'Microsoft YaHei';
+	color:#FFFF99;
+	cursor:pointer;
+	text-align:center;
+}
+#stillPlay{
+	width:350px;
+	height:160px;
+	margin-top:-80px;
+	margin-left:-175px;
+	opacity:0.91;
+	display:none;
+}
+.showStillPlay{
+	display:block !important;
+}
+#rePlay{
+	margin:30px 92px 0 15px;
+}
+#bye{
+	margin:30px 0 0 15px;
+} 
+.score{
+	display:inline-block;
+	width:160px;
+	text-align:left;
+	color:#FF6600;
+	font:25px/32px 'Verdana';
+}
+.score_txt{
+	display:inline-block;
+	width:129px;
+	text-align:left;
+}
+
+
+
